@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test_my_site</title>
-    <url>/2022/08/17/test-my-site/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/08/17/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+    <title>HelloWorld</title>
+    <url>/2022/08/19/HelloWorld/</url>
+    <content><![CDATA[<!--摘要开始-->
+<!--摘要结束-->
+<span id="more"></span>
+<!--正文开始-->
+<!--正文结束-->
+<!--摘要开始-->
+<p>万事开头难，之后更难。</p>
+<!--摘要结束-->
+<!-- more -->
+<!--正文开始-->
+<p>在历经两天半的艰辛历程之后可算是把博客大致弄完了。迫不及待的接下来就差往里面放文章了，作为程序员，当然要以helloworld作为开篇啦。</p>
+<h1>开设博客的目的</h1>
+<ul>
+<li>记录学习总结，方便日后回顾复习</li>
+<li>一直觉得自己独自学习没有输出效果不太好，博客可以作为一个知识输出的平台，可以反馈学习效果</li>
+<li>马上面临秋招了，算是作为一个技术成长记录，希望给面试带来点加分吧</li>
+<li>以后可以分享一些日常</li>
+<li>更大的希望：这个博客能够见证我的成长，以后别人想了解我看我的博客就好了，也许还能交到一些新朋友呢？</li>
+</ul>
+<h1>成功开设博客有什么<s>获奖</s>感言呢？</h1>
+<p>有点饿，就是十分的饿，中午没吃饭一口气把博客上线了。待会趴半个小时小吃一点饭还得去健身😢晚上还得打打工，已经提前感受到牛马生活了。</p>
+<!--正文结束-->]]></content>
+      <categories>
+        <category>默认</category>
+      </categories>
   </entry>
 </search>
