@@ -337,9 +337,8 @@
 <ol>
 <li><strong>git branch</strong></li>
 </ol>
-<p>输入git branch命令，查看 Git 仓库的分支情况</p>
-<p><img src="https://pic4.zhimg.com/v2-229c8f677bea969708a39a4c853ba98f_b.jpg" alt="image"></p>
-<p>*号表示“当前所在的分支”。接下来输入git branch a，创建a分支</p>
+<p>输入git branch命令，查看 Git 仓库的分支情况<br>
+*号表示“当前所在的分支”。接下来输入git branch a，创建a分支</p>
 <p><img src="https://pic2.zhimg.com/v2-ce8506d523068e526e5b9164846f18f5_b.jpg" alt="image"></p>
 <ol start="2">
 <li><strong>git checkout</strong></li>
