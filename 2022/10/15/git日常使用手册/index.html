@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"algolia":{"appID":"02IYUBO1BF","apiKey":"c56d779b89c0f03b5c5449e92b464c3b","indexName":"jackedv","hits":{"per_page":10},"labels":{"input_placeholder":"搜索...","hits_empty":"搜索结果为空","hits_stats":"找到 ${hits} 个搜索结果"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="整理一篇程序员必备——git使用指南">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git日常使用手册">
+<meta property="og:url" content="http://example.com/2022/10/15/git%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/index.html">
+<meta property="og:site_name" content="赤橙">
+<meta property="og:description" content="整理一篇程序员必备——git使用指南">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-feacd3b7a735b3e8ce13b3ce5a0b4538_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-ba919e20729494f75bc76e00f1de82fc_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-0215d2df12ba1ceb300c4fe7f512b890_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-2d758c4a4090bce9fb8d4d0447f88546_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-6932af42aa149c735cd429ae5d8b350a_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-7658f1c05af7c4dfd277d85889026275_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-341e2394a657effef0c38f445bbe9bb6_b.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-365628061daef5e1b857f4337990981e_b.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-229c8f677bea969708a39a4c853ba98f_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-ce8506d523068e526e5b9164846f18f5_b.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-807514785bdbb725053f4e30458bf5f5_b.jpg">
+<meta property="article:published_time" content="2022-10-15T06:31:43.000Z">
+<meta property="article:modified_time" content="2022-10-15T06:32:44.122Z">
+<meta property="article:author" content="Jackedv">
+<meta property="article:tag" content="git">
+<meta property="article:tag" content="github">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic1.zhimg.com/v2-feacd3b7a735b3e8ce13b3ce5a0b4538_b.jpg">
+
+<link rel="canonical" href="http://example.com/2022/10/15/git%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>git日常使用手册 | 赤橙</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">赤橙</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/15/git%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s2.loli.net/2022/08/18/zDubKXlSOvhJAQ9.jpg">
+      <meta itemprop="name" content="Jackedv">
+      <meta itemprop="description" content="a game player of the world">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="赤橙">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          git日常使用手册
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-10-15 14:31:43 / 修改时间：14:32:44" itemprop="dateCreated datePublished" datetime="2022-10-15T14:31:43+08:00">2022-10-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%BB%98%E8%AE%A4/" itemprop="url" rel="index"><span itemprop="name">默认</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <!--摘要开始-->
+<p>整理一篇程序员必备——git使用指南</p>
+<!--摘要结束-->
+<span id="more"></span>
+<!--正文开始-->
+<h1 id="准备工作"><a class="header-anchor" href="#准备工作">¶</a>准备工作</h1>
+<h2 id="github注册"><a class="header-anchor" href="#github注册">¶</a>github注册</h2>
+<p>git只是一个工具，因此要想使用git上传管理自己的代码，就要有个代码管理网站，github就是在这个领域很有名的一个网站。因此首先需要去<a target="_blank" rel="noopener" href="https://github.com/">github官网</a>注册一个账号。不过可能国内访问有时上不去，最好有个科学上网工具。</p>
+<h2 id="git安装"><a class="header-anchor" href="#git安装">¶</a>git安装</h2>
+<p>要想完成本地代码和互联网上github仓库的交互，就需要这么一个本地管理工具。首先去<a target="_blank" rel="noopener" href="https://git-scm.com/">官网</a>下载安装。</p>
+<p>安装成功后就可以在某个文件夹右键选择Git Bash Here。之后的git命令操作都是在这进行。</p>
+<h2 id="git配置"><a class="header-anchor" href="#git配置">¶</a>git配置</h2>
+<p>在正式使用git之前还需要对git进行一些配置。</p>
+<p><strong>（1）第一次使用时，要配置一下账户。</strong></p>
+<p>在 Git Bash 客户端，输入：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;这里输入你在GitHub的账户名&quot;</span><br><span class="line">git config --global user.email &quot;这里输入你在GitHub的注册邮箱名&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成。</strong></p>
+<p>在家目录/.ssh（linux）或C:\Users\用户名\.ssh（windows）下查看是否有ssh key，包括下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是自己的私钥，要保存好。</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id_rsa  id_rsa.pub  known_hosts</span><br></pre></td></tr></table></figure>
+<p>如果没有 SSH Key，就要输入以下命令行生成：</p>
+<p><code>ssh-keygen -t rsa -C &quot;这里输入你在 GitHub 的注册邮箱&quot;</code></p>
+<p><strong>（3）复制公钥。</strong></p>
+<p>使用记事本打开./ssh目录下的id_rsa.pub文件，复制里面所有内容。</p>
+<p><strong>（4）把复制的公钥添加到 GitHub 账户安装。</strong></p>
+<p>在github依次点击：Settings &gt; SSH and GPG Keys，在 SSH Keys 页面右上角有个<code>New SSH Key</code>按钮，点击该按钮后，粘贴上刚才复制的公钥内容。里面的 “title”项就是为自己的 SSH Key 命个名，可根据个人喜好随意。</p>
+<p><strong>（5）最后，检查一下 SSH Key 是否安装成功。</strong></p>
+<p>在 Git Bash 客户端运行命令：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>出现类似下面的提示，表示安装成功：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi Juliecodestack! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<h1 id="正式使用——代码管理"><a class="header-anchor" href="#正式使用——代码管理">¶</a>正式使用——代码管理</h1>
+<h2 id="初始化仓库"><a class="header-anchor" href="#初始化仓库">¶</a>初始化仓库</h2>
+<p><strong>（1）在 GitHub 中新建仓库</strong></p>
+<p>如下图所示，点击个人主页的 Repositories 项，再点击右方的<code>New</code>按钮，新建一个仓库。</p>
+<p>这里可以选择开源（public）仓库或者私人（private）仓库，一些不愿公开的个人代码备份和管理可以使用private，其他的建议使用public，发挥开源社区最大的用处。</p>
+<p>建议勾选上“Add a README file”添加仓库简要描述文件，默认内容为Description内容。</p>
+<p><img src="https://pic1.zhimg.com/v2-feacd3b7a735b3e8ce13b3ce5a0b4538_b.jpg" alt="image"></p>
+<p>打开新建的仓库，如下图所示，这个仓库的 Readme 文档的内容就是刚才填入的仓库名和描述说明。 我们点击Code按钮，复制 SSH 地址。</p>
+<p><img src="https://pic1.zhimg.com/v2-ba919e20729494f75bc76e00f1de82fc_b.jpg" alt="image"></p>
+<p><strong>（2）准备好本地仓库内容。</strong></p>
+<p>本地仓库内容可以有两种来源：</p>
+<ol>
+<li>github已有仓库下载至本地，不需要使用仓库初始化命令</li>
+<li>本地已有项目文件夹，包含代码、资源、数据等等，需要使用<strong>仓库初始化命令</strong>让git知道这个文件夹是一个仓库</li>
+</ol>
+<p><strong>这里只举例第一种</strong></p>
+<p>假设我们要下载到电脑上的目标文件夹（为了描述方便，这里简称为文件夹 A），那么我们就右键点击文件夹 A ，在右键菜单中选择“Git Bash”，在 Git Bash 客户端输入命令行：</p>
+<p><code>git clone SSH地址</code></p>
+<p>这样，仓库就会下载到文件夹 A 中。</p>
+<p>当然直接 Download Zip 也是可以的。</p>
+<p>下载仓库完成之后，文件夹 A 中有了一个新的子文件夹，比如下载了仓库 testexample2020，此时文件夹 A 中就出现了一个名为&quot;testexample2020&quot;的新文件夹，这就是下载到本地电脑的仓库。</p>
+<p>这时本地仓库的文件内容就和github仓库的文件内容完全一致了，但是此时只是文件内容一致，接下来还要完成本地仓库和github仓库的绑定，并且学习每次本地仓库变动如何上传到github仓库，github仓库变动如何下载到本地仓库，这些都要用到git工具。</p>
+<p><strong>（3）修改本地仓库并上传。</strong></p>
+<p>修改了本地仓库中的文件之后，右键点击文件夹 testexample2020（注意：此时不是在母文件夹 A 上使用 Git Bash 了），打开Git Bash 客户端，依次输入命令行：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m&quot;v0.1&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>这样修改就推送到了 GitHub 上的仓库中。</p>
+<h2 id="通常管理步骤"><a class="header-anchor" href="#通常管理步骤">¶</a>通常管理步骤</h2>
+<p>初始化仓库：</p>
+<ol>
+<li>如果没有——github创建对应仓库</li>
+<li>准备本地仓库内容</li>
+<li>通过上传同步仓库</li>
+</ol>
+<p>日常管理仓库：</p>
+<ol>
+<li>pull来同步仓库</li>
+<li>在本地修改项目</li>
+<li>push上传本地仓库</li>
+</ol>
+<h2 id="常见使用方法"><a class="header-anchor" href="#常见使用方法">¶</a>常见使用方法</h2>
+<h3 id="git基本命令"><a class="header-anchor" href="#git基本命令">¶</a>git基本命令</h3>
+<ol>
+<li><strong>git status</strong></li>
+</ol>
+<p>查看仓库的状态的命令。可以查看本地文件与本地仓库的文件区别，从而找出更改过的本地文件并加载到本地仓库。</p>
+<p><img src="https://pic1.zhimg.com/v2-0215d2df12ba1ceb300c4fe7f512b890_b.jpg" alt="image"></p>
+<ol start="2">
+<li><strong>git init</strong></li>
+</ol>
+<p>初始化 Git 仓库命令，需要在项目文件夹内最外层，如”demo“项目，需要在C:xxx…/demo/ 也就是demo文件夹中使用命令</p>
+<p><img src="https://pic3.zhimg.com/v2-2d758c4a4090bce9fb8d4d0447f88546_b.jpg" alt="image"></p>
+<ol start="3">
+<li><strong>git add</strong><br>
+输入git add hit.txt命令，将hit.txt文件添加到 Git 本地缓存区</li>
+</ol>
+<p><img src="https://pic3.zhimg.com/v2-6932af42aa149c735cd429ae5d8b350a_b.jpg" alt="image"><br>
+使用git status查看添加后的状态</p>
+<p><img src="https://pic2.zhimg.com/v2-7658f1c05af7c4dfd277d85889026275_b.jpg" alt="image"></p>
+<p>已经添加到缓存区，等待提交到本地仓库</p>
+<ol start="4">
+<li><strong>git commit</strong></li>
+</ol>
+<p>输入git commit -m &quot;text commit&quot;命令，将hit.txt文件提交到 Git 仓库，并通过-m添加&quot;text commit&quot;的注释来标记这次提交。</p>
+<p><img src="https://pic3.zhimg.com/v2-341e2394a657effef0c38f445bbe9bb6_b.jpg" alt="image"></p>
+<ol start="5">
+<li><strong>git log</strong></li>
+</ol>
+<p>输入git log命令，打印 Git 仓库提交日志</p>
+<p><img src="https://pic3.zhimg.com/v2-365628061daef5e1b857f4337990981e_b.jpg" alt="image"></p>
+<h3 id="分支管理"><a class="header-anchor" href="#分支管理">¶</a>分支管理</h3>
+<ol>
+<li><strong>git branch</strong></li>
+</ol>
+<p>输入git branch命令，查看 Git 仓库的分支情况</p>
+<p><img src="https://pic4.zhimg.com/v2-229c8f677bea969708a39a4c853ba98f_b.jpg" alt="image"></p>
+<p>*号表示“当前所在的分支”。接下来输入git branch a，创建a分支</p>
+<p><img src="https://pic2.zhimg.com/v2-ce8506d523068e526e5b9164846f18f5_b.jpg" alt="image"></p>
+<ol start="2">
+<li><strong>git checkout</strong></li>
+</ol>
+<p>输入git checkout a命令，切换到a分支</p>
+<ol start="3">
+<li><strong>git merge</strong></li>
+</ol>
+<p>切换到master分支，然后输入git merge a命令，将a分支合并到master分支</p>
+<p><img src="https://pic2.zhimg.com/v2-807514785bdbb725053f4e30458bf5f5_b.jpg" alt="image"></p>
+<p>在合并分支的时候，要考虑到两个分支是否有冲突，如果有冲突，则不能直接合并，需要先解决冲突；反之，则可以直接合并。</p>
+<ol>
+<li><strong>git branch -d &amp; git branch -D</strong></li>
+</ol>
+<p>输入git branch -d a命令，删除a分支。有的时候，通过git branch -d命令可以出现删除不了现象，例如分支a的代码没有合并到主分支等，这时如果我们一定要删除该分支，那么我们可以通过命令git branch -D进行强制删除。</p>
+<h2 id="碰过的问题"><a class="header-anchor" href="#碰过的问题">¶</a>碰过的问题</h2>
+<h3 id="Git-Push推送大文件（大于100MB）失败"><a class="header-anchor" href="#Git-Push推送大文件（大于100MB）失败">¶</a>Git Push推送大文件（大于100MB）失败</h3>
+<p>最好的办法就是不推送，把它添加到.gitignore文件中。因为大文件不符合github代码管理的初衷，数据文件应该寻求其他的处理方式（百度网盘等等）</p>
+<p>如果确实有需要，可以参考这篇文章</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub git push超过100MB大文件失败（write error: Broken pipe）完美解决-追逐时光者-https://zhuanlan.zhihu.com/p/444203121</span><br></pre></td></tr></table></figure>
+<h3 id="git-status时有Untracked-files（未跟踪）的文件"><a class="header-anchor" href="#git-status时有Untracked-files（未跟踪）的文件">¶</a>git status时有Untracked files（未跟踪）的文件</h3>
+<p>参考这篇文章即可</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git status时有Untracked files（racked files（未跟踪）的文件，原因分析以及解决方案，git clean详解-机智小袁</span><br><span class="line">-https://blog.csdn.net/wangdawei_/article/details/124536677</span><br></pre></td></tr></table></figure>
+<h1 id="参考资料"><a class="header-anchor" href="#参考资料">¶</a>参考资料</h1>
+<ol>
+<li>GitHub入门指南-宁萌时光-<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/337959303">https://zhuanlan.zhihu.com/p/337959303</a></li>
+<li>还不会使用GitHub？GitHub 教程来了！万字图文详解-吴师兄学算法-<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/369486197">https://zhuanlan.zhihu.com/p/369486197</a></li>
+</ol>
+<!--正文结束-->
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/git/" rel="tag"># git</a>
+              <a href="/tags/github/" rel="tag"># github</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/10/13/%E5%B0%8F%E7%8E%8B%E5%AD%90/" rel="prev" title="小王子">
+      <i class="fa fa-chevron-left"></i> 小王子
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81NzA4MC8zMzU0NA=="></div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#github%E6%B3%A8%E5%86%8C"><span class="nav-number">1.1.</span> <span class="nav-text">github注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git%E5%AE%89%E8%A3%85"><span class="nav-number">1.2.</span> <span class="nav-text">git安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">git配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A3%E5%BC%8F%E4%BD%BF%E7%94%A8%E2%80%94%E2%80%94%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">正式使用——代码管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%93%E5%BA%93"><span class="nav-number">2.1.</span> <span class="nav-text">初始化仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E5%B8%B8%E7%AE%A1%E7%90%86%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.2.</span> <span class="nav-text">通常管理步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">2.3.</span> <span class="nav-text">常见使用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">2.3.1.</span> <span class="nav-text">git基本命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86"><span class="nav-number">2.3.2.</span> <span class="nav-text">分支管理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A2%B0%E8%BF%87%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.4.</span> <span class="nav-text">碰过的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-Push%E6%8E%A8%E9%80%81%E5%A4%A7%E6%96%87%E4%BB%B6%EF%BC%88%E5%A4%A7%E4%BA%8E100MB%EF%BC%89%E5%A4%B1%E8%B4%A5"><span class="nav-number">2.4.1.</span> <span class="nav-text">Git Push推送大文件（大于100MB）失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-status%E6%97%B6%E6%9C%89Untracked-files%EF%BC%88%E6%9C%AA%E8%B7%9F%E8%B8%AA%EF%BC%89%E7%9A%84%E6%96%87%E4%BB%B6"><span class="nav-number">2.4.2.</span> <span class="nav-text">git status时有Untracked files（未跟踪）的文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jackedv"
+      src="https://s2.loli.net/2022/08/18/zDubKXlSOvhJAQ9.jpg">
+  <p class="site-author-name" itemprop="name">Jackedv</p>
+  <div class="site-description" itemprop="description">a game player of the world</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jackedv" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jackedv" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jackedv@foxmail.com" title="E-Mail → mailto:jackedv@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.sardinefish.com/" title="https:&#x2F;&#x2F;www.sardinefish.com&#x2F;" rel="noopener" target="_blank">sardinefish</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://aristotlednzk.github.io/" title="https:&#x2F;&#x2F;aristotlednzk.github.io&#x2F;" rel="noopener" target="_blank">Sean Barrett</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-code"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackedv</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
+
+</body>
+</html>

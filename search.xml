@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HelloWorld</title>
-    <url>/2022/08/19/HelloWorld/</url>
-    <content><![CDATA[<p>万事开头难，之后更难。</p>
-<span id="more"></span>
-<p>在历经两天半的艰辛历程之后可算是把博客大致弄完了。迫不及待的接下来就差往里面放文章了，作为程序员，当然要以helloworld作为开篇了😈</p>
-<h1 id="开设博客的目的"><a class="header-anchor" href="#开设博客的目的">¶</a>开设博客的目的</h1>
-<ul>
-<li>记录学习总结，方便日后回顾复习</li>
-<li>一直觉得自己独自学习没有输出效果不太好，博客可以作为一个知识输出的平台，可以反馈学习效果</li>
-<li>马上面临秋招了，算是作为一个技术成长记录，希望给面试带来点加分</li>
-<li>可以分享一些日常</li>
-<li>更大的希望：这个博客能够见证我的成长，也许也能交到一些新朋友</li>
-</ul>
-<h1 id="更新频率"><a class="header-anchor" href="#更新频率">¶</a>更新频率</h1>
-<p>因为平常比较忙，所以会把草稿临时记到自己私人笔记软件中，最后在周末的时候统一整理更新。现在觉得最大的麻烦是要使用图床插入图片，其他方面好像没什么阻力</p>
-<h1 id="博客内容"><a class="header-anchor" href="#博客内容">¶</a>博客内容</h1>
-<p>目前打算定期更新的内容有：</p>
-<ul>
-<li>定期总结，包括月度总结和年度总结</li>
-<li>力扣算法专题总结</li>
-<li>之后科研、项目涉及到的环境装配流程，踩过的坑等</li>
-<li>之后学习技术知识的知识总结，如java核心技术、mysql等</li>
-</ul>
-<p>也许会更新的内容有——如果懒癌没犯的话：</p>
-<ul>
-<li>书、剧的观后感、读后感</li>
-<li>日常或旅行分享</li>
-</ul>
-<h1 id="成功开设博客有什么获奖感言？"><a class="header-anchor" href="#成功开设博客有什么获奖感言？">¶</a>成功开设博客有什么<s>获奖</s>感言？</h1>
-<p>有点饿，就是十分的饿，中午没吃饭一口气把博客上线了。待会趴半个小时小吃一点饭还得去健身😢晚上还得打打工，已经提前感受到牛马生活了。</p>
-]]></content>
-      <categories>
-        <category>更新计划</category>
-      </categories>
-  </entry>
-  <entry>
     <title>暑期总结</title>
     <url>/2022/08/27/%E6%9A%91%E6%9C%9F%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<!--摘要开始-->
@@ -89,6 +53,42 @@
       </categories>
   </entry>
   <entry>
+    <title>HelloWorld</title>
+    <url>/2022/08/19/HelloWorld/</url>
+    <content><![CDATA[<p>万事开头难，之后更难。</p>
+<span id="more"></span>
+<p>在历经两天半的艰辛历程之后可算是把博客大致弄完了。迫不及待的接下来就差往里面放文章了，作为程序员，当然要以helloworld作为开篇了😈</p>
+<h1 id="开设博客的目的"><a class="header-anchor" href="#开设博客的目的">¶</a>开设博客的目的</h1>
+<ul>
+<li>记录学习总结，方便日后回顾复习</li>
+<li>一直觉得自己独自学习没有输出效果不太好，博客可以作为一个知识输出的平台，可以反馈学习效果</li>
+<li>马上面临秋招了，算是作为一个技术成长记录，希望给面试带来点加分</li>
+<li>可以分享一些日常</li>
+<li>更大的希望：这个博客能够见证我的成长，也许也能交到一些新朋友</li>
+</ul>
+<h1 id="更新频率"><a class="header-anchor" href="#更新频率">¶</a>更新频率</h1>
+<p>因为平常比较忙，所以会把草稿临时记到自己私人笔记软件中，最后在周末的时候统一整理更新。现在觉得最大的麻烦是要使用图床插入图片，其他方面好像没什么阻力</p>
+<h1 id="博客内容"><a class="header-anchor" href="#博客内容">¶</a>博客内容</h1>
+<p>目前打算定期更新的内容有：</p>
+<ul>
+<li>定期总结，包括月度总结和年度总结</li>
+<li>力扣算法专题总结</li>
+<li>之后科研、项目涉及到的环境装配流程，踩过的坑等</li>
+<li>之后学习技术知识的知识总结，如java核心技术、mysql等</li>
+</ul>
+<p>也许会更新的内容有——如果懒癌没犯的话：</p>
+<ul>
+<li>书、剧的观后感、读后感</li>
+<li>日常或旅行分享</li>
+</ul>
+<h1 id="成功开设博客有什么获奖感言？"><a class="header-anchor" href="#成功开设博客有什么获奖感言？">¶</a>成功开设博客有什么<s>获奖</s>感言？</h1>
+<p>有点饿，就是十分的饿，中午没吃饭一口气把博客上线了。待会趴半个小时小吃一点饭还得去健身😢晚上还得打打工，已经提前感受到牛马生活了。</p>
+]]></content>
+      <categories>
+        <category>更新计划</category>
+      </categories>
+  </entry>
+  <entry>
     <title>小王子</title>
     <url>/2022/10/13/%E5%B0%8F%E7%8E%8B%E5%AD%90/</url>
     <content><![CDATA[<!--摘要开始-->
@@ -123,34 +123,6 @@
 </blockquote>
 <p>小王子认为一昧的给予与顺从就是爱，于是他被玫瑰的各种要求折磨着，迷茫着，痛苦着，最后不得不含泪离开。<br>
 良性的感情应该是怎样的呢？它不该是两者为了满足自己的安全感和虚荣心而建立起来的主仆关系，而是互相依靠的平等的挚友关系。加强与伴侣之间的联系靠的应该是自己的关心和帮助以及在相处过程中不断带给对方的独一无二的美好与悸动。我们应该明白，对他人的服从不等同于在乎，它是双方没有充分交流感受和尊重对方的一个体现，而被压抑的感受迟早都会爆发。不服从也不等同于抛弃，它可能只是由于双方想法存在差异，毕竟双方的内心并非彼此的拷贝，双方理解尊重包容共同成长才是良性感情的特征。</p>
-<!--正文结束-->]]></content>
-      <categories>
-        <category>默认</category>
-      </categories>
-      <tags>
-        <tag>读后感</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>幸运的贝儿</title>
-    <url>/2022/10/13/%E5%B9%B8%E8%BF%90%E7%9A%84%E8%B4%9D%E5%84%BF/</url>
-    <content><![CDATA[<!--摘要开始-->
-<p>搬一搬以前写的读后感，安徒生中篇童话《幸运的贝儿》</p>
-<!--摘要结束-->
-<span id="more"></span>
-<!--正文开始-->
-<p>读到贝儿在舞台上猝死的时候是挺震撼的，同时心中又有着疑问。在艺术巅峰的才华横溢，拥有千千万万颗金心银心的人突然逝去，他本该还能在人生中继续享受艺术的魅力，本来还能收获更多的金心银心，本来还能让他的妈妈和祖母过上更加富裕的生活，本来应该继续享受上天给他的数不尽的运气。</p>
-<p>但是他为什么在文章最后猝死了呢？<br>
-这样的他幸运吗？</p>
-<p>贝儿出生在一个顶楼上，家境贫穷，却总有着好运气。拥有琥珀心的他拥有孩童的性情，坚强刚毅的内心，惊人的艺术天赋，周围几乎所有人都爱着他。从这样的角度上来看简直想不到除了幸运以外的词来形容贝儿。<br>
-可偏偏最后猝死了。<br>
-于是很多人迷惑了，不理解了，他到底是幸运还是不幸？</p>
-<p>我想这也正是作者想要给我们提的一个问题–对我们每个人来说，怎样的人生才算是幸运的呢？<br>
-是活的很长久，最后安详的逝去？是才华横溢，意气风发，有过指点江山的辉煌？是拥有一个孩童的性情，刚毅的内心–一颗琥珀心？是拥有一个圆满浪漫美好的感情？是获得周围人的爱？为自己热爱的事情投入一生？</p>
-<p>我觉得这篇文章中已经把作者自己的看法给体现出来了。故事的名字就是作者的观点。贝儿的确是幸运的。从故事中看出，贝儿没有的圆满美好的爱情，也没有辉煌过后的安详人生。可正如故事中体现的，作者认为这些东西即使没有，一个人也可以被称为幸运的。作者认为贝儿的幸运–也是唯一的幸运，当然，就是贝儿拥有一颗琥珀心–天真且刚毅。仅仅是一颗琥珀心，它给了贝儿拥有一切。正是拥有一颗琥珀心，贝儿才更好的感受世界的情感，而这正是一个艺术家所需的必备品质，诗人做出的诗，作曲家谱出的曲子，歌剧家写的剧本，画家的画，歌唱家喉中的天籁，若仅仅是无活力的符号，它们无法感染任何人，也不配称为艺术。艺术之所以能通过各种形式不断的感染世人，正是因为作者把他们对世界的感知，融入了自己独一无二的饱满感情，传达到了观众的心中。于是心与心之间碰撞，一颗心被另一颗或真挚或天真或悲伤的心给感染，为之动容。一个好的艺术家一定是敏感的，多愁善感的，伤春悲秋的，甚至神经质的。</p>
-<p>有趣的是，这些似乎被如今的人视为一种缺陷：矫情，多愁善感，非主流，圣母等等。这些词里或多或少都表达了人们对感情的鄙夷，不屑。现在人们比起感情的交流，情绪的感受，世界的感知，似乎更加在乎工作金钱学习之类的正经事。甚至是回避–说出内心的感受通常被认为是一件难为情的事情，透漏出内心的情感通常被认为是暴露–一件会把自己置于危险地位的事情。</p>
-<p>所以一颗琥珀心与贝儿的艺术天赋是紧密相关的。同时正是他用来感染周围人的可贵的琥珀心使他收获了更多的金心，银心。被爱着的人的幸运的，被许多人爱着的贝儿更是如此。这也是琥珀心带给贝儿的另一个礼物。</p>
-<p>最后，贝儿达成了他前所未有的艺术的高度，融入全部心血创造出的作品得到了世人的认可与欢呼，虽然猝死，但可以说他的人生是完满的，他是幸福的离去的。虽然这个离去本身当然不能算是幸运–贝儿之后可能能收获更多的幸福，但这个离去对贝儿来说肯定也不算是不幸。令我在意的是，贝儿成名之后很有一段时间了，却在接近结尾才给妈妈和祖母了一套房，这可能也是作者不希望贝儿因为死而体现的不幸的一个表现，死永远都不是只属于自己的事，贝儿的死去肯定会给家人们带来悲痛，但是在结尾贝儿终于给了她们一个更好的生活，可以说是给了贝儿自己、他的家人、读者一个慰藉。</p>
 <!--正文结束-->]]></content>
       <categories>
         <category>所思所感</category>
@@ -220,6 +192,180 @@
       </categories>
       <tags>
         <tag>朴素思考</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>幸运的贝儿</title>
+    <url>/2022/10/13/%E5%B9%B8%E8%BF%90%E7%9A%84%E8%B4%9D%E5%84%BF/</url>
+    <content><![CDATA[<!--摘要开始-->
+<p>搬一搬以前写的读后感，安徒生中篇童话《幸运的贝儿》</p>
+<!--摘要结束-->
+<span id="more"></span>
+<!--正文开始-->
+<p>读到贝儿在舞台上猝死的时候是挺震撼的，同时心中又有着疑问。在艺术巅峰的才华横溢，拥有千千万万颗金心银心的人突然逝去，他本该还能在人生中继续享受艺术的魅力，本来还能收获更多的金心银心，本来还能让他的妈妈和祖母过上更加富裕的生活，本来应该继续享受上天给他的数不尽的运气。</p>
+<p>但是他为什么在文章最后猝死了呢？<br>
+这样的他幸运吗？</p>
+<p>贝儿出生在一个顶楼上，家境贫穷，却总有着好运气。拥有琥珀心的他拥有孩童的性情，坚强刚毅的内心，惊人的艺术天赋，周围几乎所有人都爱着他。从这样的角度上来看简直想不到除了幸运以外的词来形容贝儿。<br>
+可偏偏最后猝死了。<br>
+于是很多人迷惑了，不理解了，他到底是幸运还是不幸？</p>
+<p>我想这也正是作者想要给我们提的一个问题–对我们每个人来说，怎样的人生才算是幸运的呢？<br>
+是活的很长久，最后安详的逝去？是才华横溢，意气风发，有过指点江山的辉煌？是拥有一个孩童的性情，刚毅的内心–一颗琥珀心？是拥有一个圆满浪漫美好的感情？是获得周围人的爱？为自己热爱的事情投入一生？</p>
+<p>我觉得这篇文章中已经把作者自己的看法给体现出来了。故事的名字就是作者的观点。贝儿的确是幸运的。从故事中看出，贝儿没有的圆满美好的爱情，也没有辉煌过后的安详人生。可正如故事中体现的，作者认为这些东西即使没有，一个人也可以被称为幸运的。作者认为贝儿的幸运–也是唯一的幸运，当然，就是贝儿拥有一颗琥珀心–天真且刚毅。仅仅是一颗琥珀心，它给了贝儿拥有一切。正是拥有一颗琥珀心，贝儿才更好的感受世界的情感，而这正是一个艺术家所需的必备品质，诗人做出的诗，作曲家谱出的曲子，歌剧家写的剧本，画家的画，歌唱家喉中的天籁，若仅仅是无活力的符号，它们无法感染任何人，也不配称为艺术。艺术之所以能通过各种形式不断的感染世人，正是因为作者把他们对世界的感知，融入了自己独一无二的饱满感情，传达到了观众的心中。于是心与心之间碰撞，一颗心被另一颗或真挚或天真或悲伤的心给感染，为之动容。一个好的艺术家一定是敏感的，多愁善感的，伤春悲秋的，甚至神经质的。</p>
+<p>有趣的是，这些似乎被如今的人视为一种缺陷：矫情，多愁善感，非主流，圣母等等。这些词里或多或少都表达了人们对感情的鄙夷，不屑。现在人们比起感情的交流，情绪的感受，世界的感知，似乎更加在乎工作金钱学习之类的正经事。甚至是回避–说出内心的感受通常被认为是一件难为情的事情，透漏出内心的情感通常被认为是暴露–一件会把自己置于危险地位的事情。</p>
+<p>所以一颗琥珀心与贝儿的艺术天赋是紧密相关的。同时正是他用来感染周围人的可贵的琥珀心使他收获了更多的金心，银心。被爱着的人的幸运的，被许多人爱着的贝儿更是如此。这也是琥珀心带给贝儿的另一个礼物。</p>
+<p>最后，贝儿达成了他前所未有的艺术的高度，融入全部心血创造出的作品得到了世人的认可与欢呼，虽然猝死，但可以说他的人生是完满的，他是幸福的离去的。虽然这个离去本身当然不能算是幸运–贝儿之后可能能收获更多的幸福，但这个离去对贝儿来说肯定也不算是不幸。令我在意的是，贝儿成名之后很有一段时间了，却在接近结尾才给妈妈和祖母了一套房，这可能也是作者不希望贝儿因为死而体现的不幸的一个表现，死永远都不是只属于自己的事，贝儿的死去肯定会给家人们带来悲痛，但是在结尾贝儿终于给了她们一个更好的生活，可以说是给了贝儿自己、他的家人、读者一个慰藉。</p>
+<!--正文结束-->]]></content>
+      <categories>
+        <category>所思所感</category>
+      </categories>
+      <tags>
+        <tag>读后感</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git日常使用手册</title>
+    <url>/2022/10/15/git%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[<!--摘要开始-->
+<p>整理一篇程序员必备——git使用指南</p>
+<!--摘要结束-->
+<span id="more"></span>
+<!--正文开始-->
+<h1 id="准备工作"><a class="header-anchor" href="#准备工作">¶</a>准备工作</h1>
+<h2 id="github注册"><a class="header-anchor" href="#github注册">¶</a>github注册</h2>
+<p>git只是一个工具，因此要想使用git上传管理自己的代码，就要有个代码管理网站，github就是在这个领域很有名的一个网站。因此首先需要去<a href="https://github.com/">github官网</a>注册一个账号。不过可能国内访问有时上不去，最好有个科学上网工具。</p>
+<h2 id="git安装"><a class="header-anchor" href="#git安装">¶</a>git安装</h2>
+<p>要想完成本地代码和互联网上github仓库的交互，就需要这么一个本地管理工具。首先去<a href="https://git-scm.com/">官网</a>下载安装。</p>
+<p>安装成功后就可以在某个文件夹右键选择Git Bash Here。之后的git命令操作都是在这进行。</p>
+<h2 id="git配置"><a class="header-anchor" href="#git配置">¶</a>git配置</h2>
+<p>在正式使用git之前还需要对git进行一些配置。</p>
+<p><strong>（1）第一次使用时，要配置一下账户。</strong></p>
+<p>在 Git Bash 客户端，输入：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;这里输入你在GitHub的账户名&quot;</span><br><span class="line">git config --global user.email &quot;这里输入你在GitHub的注册邮箱名&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成。</strong></p>
+<p>在家目录/.ssh（linux）或C:\Users\用户名\.ssh（windows）下查看是否有ssh key，包括下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是自己的私钥，要保存好。</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="code"><pre><span class="line">id_rsa  id_rsa.pub  known_hosts</span><br></pre></td></tr></table></figure>
+<p>如果没有 SSH Key，就要输入以下命令行生成：</p>
+<p><code>ssh-keygen -t rsa -C &quot;这里输入你在 GitHub 的注册邮箱&quot;</code></p>
+<p><strong>（3）复制公钥。</strong></p>
+<p>使用记事本打开./ssh目录下的id_rsa.pub文件，复制里面所有内容。</p>
+<p><strong>（4）把复制的公钥添加到 GitHub 账户安装。</strong></p>
+<p>在github依次点击：Settings &gt; SSH and GPG Keys，在 SSH Keys 页面右上角有个<code>New SSH Key</code>按钮，点击该按钮后，粘贴上刚才复制的公钥内容。里面的 “title”项就是为自己的 SSH Key 命个名，可根据个人喜好随意。</p>
+<p><strong>（5）最后，检查一下 SSH Key 是否安装成功。</strong></p>
+<p>在 Git Bash 客户端运行命令：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>出现类似下面的提示，表示安装成功：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="code"><pre><span class="line">Hi Juliecodestack! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<h1 id="正式使用——代码管理"><a class="header-anchor" href="#正式使用——代码管理">¶</a>正式使用——代码管理</h1>
+<h2 id="初始化仓库"><a class="header-anchor" href="#初始化仓库">¶</a>初始化仓库</h2>
+<p><strong>（1）在 GitHub 中新建仓库</strong></p>
+<p>如下图所示，点击个人主页的 Repositories 项，再点击右方的<code>New</code>按钮，新建一个仓库。</p>
+<p>这里可以选择开源（public）仓库或者私人（private）仓库，一些不愿公开的个人代码备份和管理可以使用private，其他的建议使用public，发挥开源社区最大的用处。</p>
+<p>建议勾选上“Add a README file”添加仓库简要描述文件，默认内容为Description内容。</p>
+<p><img src="https://pic1.zhimg.com/v2-feacd3b7a735b3e8ce13b3ce5a0b4538_b.jpg" alt="image"></p>
+<p>打开新建的仓库，如下图所示，这个仓库的 Readme 文档的内容就是刚才填入的仓库名和描述说明。 我们点击Code按钮，复制 SSH 地址。</p>
+<p><img src="https://pic1.zhimg.com/v2-ba919e20729494f75bc76e00f1de82fc_b.jpg" alt="image"></p>
+<p><strong>（2）准备好本地仓库内容。</strong></p>
+<p>本地仓库内容可以有两种来源：</p>
+<ol>
+<li>github已有仓库下载至本地，不需要使用仓库初始化命令</li>
+<li>本地已有项目文件夹，包含代码、资源、数据等等，需要使用<strong>仓库初始化命令</strong>让git知道这个文件夹是一个仓库</li>
+</ol>
+<p><strong>这里只举例第一种</strong></p>
+<p>假设我们要下载到电脑上的目标文件夹（为了描述方便，这里简称为文件夹 A），那么我们就右键点击文件夹 A ，在右键菜单中选择“Git Bash”，在 Git Bash 客户端输入命令行：</p>
+<p><code>git clone SSH地址</code></p>
+<p>这样，仓库就会下载到文件夹 A 中。</p>
+<p>当然直接 Download Zip 也是可以的。</p>
+<p>下载仓库完成之后，文件夹 A 中有了一个新的子文件夹，比如下载了仓库 testexample2020，此时文件夹 A 中就出现了一个名为&quot;testexample2020&quot;的新文件夹，这就是下载到本地电脑的仓库。</p>
+<p>这时本地仓库的文件内容就和github仓库的文件内容完全一致了，但是此时只是文件内容一致，接下来还要完成本地仓库和github仓库的绑定，并且学习每次本地仓库变动如何上传到github仓库，github仓库变动如何下载到本地仓库，这些都要用到git工具。</p>
+<p><strong>（3）修改本地仓库并上传。</strong></p>
+<p>修改了本地仓库中的文件之后，右键点击文件夹 testexample2020（注意：此时不是在母文件夹 A 上使用 Git Bash 了），打开Git Bash 客户端，依次输入命令行：</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m&quot;v0.1&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>这样修改就推送到了 GitHub 上的仓库中。</p>
+<h2 id="通常管理步骤"><a class="header-anchor" href="#通常管理步骤">¶</a>通常管理步骤</h2>
+<p>初始化仓库：</p>
+<ol>
+<li>如果没有——github创建对应仓库</li>
+<li>准备本地仓库内容</li>
+<li>通过上传同步仓库</li>
+</ol>
+<p>日常管理仓库：</p>
+<ol>
+<li>pull来同步仓库</li>
+<li>在本地修改项目</li>
+<li>push上传本地仓库</li>
+</ol>
+<h2 id="常见使用方法"><a class="header-anchor" href="#常见使用方法">¶</a>常见使用方法</h2>
+<h3 id="git基本命令"><a class="header-anchor" href="#git基本命令">¶</a>git基本命令</h3>
+<ol>
+<li><strong>git status</strong></li>
+</ol>
+<p>查看仓库的状态的命令。可以查看本地文件与本地仓库的文件区别，从而找出更改过的本地文件并加载到本地仓库。</p>
+<p><img src="https://pic1.zhimg.com/v2-0215d2df12ba1ceb300c4fe7f512b890_b.jpg" alt="image"></p>
+<ol start="2">
+<li><strong>git init</strong></li>
+</ol>
+<p>初始化 Git 仓库命令，需要在项目文件夹内最外层，如”demo“项目，需要在C:xxx…/demo/ 也就是demo文件夹中使用命令</p>
+<p><img src="https://pic3.zhimg.com/v2-2d758c4a4090bce9fb8d4d0447f88546_b.jpg" alt="image"></p>
+<ol start="3">
+<li><strong>git add</strong><br>
+输入git add hit.txt命令，将hit.txt文件添加到 Git 本地缓存区</li>
+</ol>
+<p><img src="https://pic3.zhimg.com/v2-6932af42aa149c735cd429ae5d8b350a_b.jpg" alt="image"><br>
+使用git status查看添加后的状态</p>
+<p><img src="https://pic2.zhimg.com/v2-7658f1c05af7c4dfd277d85889026275_b.jpg" alt="image"></p>
+<p>已经添加到缓存区，等待提交到本地仓库</p>
+<ol start="4">
+<li><strong>git commit</strong></li>
+</ol>
+<p>输入git commit -m &quot;text commit&quot;命令，将hit.txt文件提交到 Git 仓库，并通过-m添加&quot;text commit&quot;的注释来标记这次提交。</p>
+<p><img src="https://pic3.zhimg.com/v2-341e2394a657effef0c38f445bbe9bb6_b.jpg" alt="image"></p>
+<ol start="5">
+<li><strong>git log</strong></li>
+</ol>
+<p>输入git log命令，打印 Git 仓库提交日志</p>
+<p><img src="https://pic3.zhimg.com/v2-365628061daef5e1b857f4337990981e_b.jpg" alt="image"></p>
+<h3 id="分支管理"><a class="header-anchor" href="#分支管理">¶</a>分支管理</h3>
+<ol>
+<li><strong>git branch</strong></li>
+</ol>
+<p>输入git branch命令，查看 Git 仓库的分支情况</p>
+<p><img src="https://pic4.zhimg.com/v2-229c8f677bea969708a39a4c853ba98f_b.jpg" alt="image"></p>
+<p>*号表示“当前所在的分支”。接下来输入git branch a，创建a分支</p>
+<p><img src="https://pic2.zhimg.com/v2-ce8506d523068e526e5b9164846f18f5_b.jpg" alt="image"></p>
+<ol start="2">
+<li><strong>git checkout</strong></li>
+</ol>
+<p>输入git checkout a命令，切换到a分支</p>
+<ol start="3">
+<li><strong>git merge</strong></li>
+</ol>
+<p>切换到master分支，然后输入git merge a命令，将a分支合并到master分支</p>
+<p><img src="https://pic2.zhimg.com/v2-807514785bdbb725053f4e30458bf5f5_b.jpg" alt="image"></p>
+<p>在合并分支的时候，要考虑到两个分支是否有冲突，如果有冲突，则不能直接合并，需要先解决冲突；反之，则可以直接合并。</p>
+<ol>
+<li><strong>git branch -d &amp; git branch -D</strong></li>
+</ol>
+<p>输入git branch -d a命令，删除a分支。有的时候，通过git branch -d命令可以出现删除不了现象，例如分支a的代码没有合并到主分支等，这时如果我们一定要删除该分支，那么我们可以通过命令git branch -D进行强制删除。</p>
+<h2 id="碰过的问题"><a class="header-anchor" href="#碰过的问题">¶</a>碰过的问题</h2>
+<h3 id="Git-Push推送大文件（大于100MB）失败"><a class="header-anchor" href="#Git-Push推送大文件（大于100MB）失败">¶</a>Git Push推送大文件（大于100MB）失败</h3>
+<p>最好的办法就是不推送，把它添加到.gitignore文件中。因为大文件不符合github代码管理的初衷，数据文件应该寻求其他的处理方式（百度网盘等等）</p>
+<p>如果确实有需要，可以参考这篇文章</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="code"><pre><span class="line">GitHub git push超过100MB大文件失败（write error: Broken pipe）完美解决-追逐时光者-https://zhuanlan.zhihu.com/p/444203121</span><br></pre></td></tr></table></figure>
+<h3 id="git-status时有Untracked-files（未跟踪）的文件"><a class="header-anchor" href="#git-status时有Untracked-files（未跟踪）的文件">¶</a>git status时有Untracked files（未跟踪）的文件</h3>
+<p>参考这篇文章即可</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="code"><pre><span class="line">git status时有Untracked files（racked files（未跟踪）的文件，原因分析以及解决方案，git clean详解-机智小袁</span><br><span class="line">-https://blog.csdn.net/wangdawei_/article/details/124536677</span><br></pre></td></tr></table></figure>
+<h1 id="参考资料"><a class="header-anchor" href="#参考资料">¶</a>参考资料</h1>
+<ol>
+<li>GitHub入门指南-宁萌时光-<a href="https://zhuanlan.zhihu.com/p/337959303">https://zhuanlan.zhihu.com/p/337959303</a></li>
+<li>还不会使用GitHub？GitHub 教程来了！万字图文详解-吴师兄学算法-<a href="https://zhuanlan.zhihu.com/p/369486197">https://zhuanlan.zhihu.com/p/369486197</a></li>
+</ol>
+<!--正文结束-->]]></content>
+      <categories>
+        <category>默认</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
       </tags>
   </entry>
 </search>
